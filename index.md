@@ -52,7 +52,7 @@ alert( perguntas[0].respostas[perguntas[0].correta] )
 //
 ````
 _________________________________________________________________________________________________
-prompt Microsoft Copiloto: Crie  10 perguntas sobre o topico Fundamentos de JavaScript com 3 opções de resposta e uma resposta correta, Para compor um aplicativo em JavaScript. Responda conforme a estrutura de dados do exemplo abaixo.
+prompt Microsoft Copiloto v1: Crie  10 perguntas sobre o topico Fundamentos de JavaScript com 3 opções de resposta e uma resposta correta, Para compor um aplicativo em JavaScript. Responda conforme a estrutura de dados do exemplo abaixo.
 
 const perguntas = [
   {
@@ -67,4 +67,19 @@ const perguntas = [
 ]
 
 Faça perguntas para iniciantes em JavaScript.
+
+
+prompt Microsoft Copiloto v2: Crie  14 perguntas sobre o topico Curiosidades de Videogames com 4 opções de resposta e uma resposta correta, Para compor um aplicativo em JavaScript. Responda conforme a estrutura de dados do exemplo abaixo.
+
+const perguntas = [
+  {
+    pergunta: "pergunta 01",
+    respostas: [
+      "Resposta A",
+      "Resposta B",
+      "Resposta C",
+    ],
+    correta: 2
+  },
+]
 ______________________________________________________________________________________________________________

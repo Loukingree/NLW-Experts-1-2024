@@ -1,185 +1,277 @@
 const perguntas = [
   {
-    pergunta: "Qual é a sintaxe correta para referenciar um script externo chamado 'xxx.js'?",
+    pergunta: "Qual é o nome do protagonista de The Legend of Zelda?",
     respostas: [
-      "<script href='xxx.js'>",
-      "<script name='xxx.js'>",
-      "<script src='xxx.js'>",
+      "Zelda",
+      "Link",
+      "Ganon",
+      "Navi"
     ],
-    correta: 2
+    correta: 1 // Link
   },
   {
-    pergunta: "Como você escreve 'Hello World' em uma caixa de alerta?",
+    pergunta: "Qual é o nome do mascote da SEGA?",
     respostas: [
-      "msgBox('Hello World');",
-      "alertBox('Hello World');",
-      "alert('Hello World');",
+      "Mario",
+      "Sonic",
+      "Crash",
+      "Kirby"
     ],
-    correta: 2
+    correta: 1 // Sonic
   },
   {
-    pergunta: "Como você cria uma variável chamada 'carName'?",
+    pergunta: "Qual é o nome do jogo que popularizou o gênero battle royale?",
     respostas: [
-      "variable carName;",
-      "var carName;",
-      "v carName;",
+      "Fortnite",
+      "PUBG",
+      "Minecraft",
+      "Call of Duty"
     ],
-    correta: 1
+    correta: 1 // PUBG
   },
   {
-    pergunta: "Como você pode adicionar um comentário em uma linha no JavaScript?",
+    pergunta: "Qual é o nome do criador de Minecraft?",
     respostas: [
-      "//This comment",
-      "<!--This comment-->",
-      "'This comment",
+      "Markus Persson",
+      "Gabe Newell",
+      "Hideo Kojima",
+      "Shigeru Miyamoto"
     ],
-    correta: 0
+    correta: 0 // Markus Persson
   },
   {
-    pergunta: "Qual é a maneira correta de escrever um array em JavaScript?",
+    pergunta: "Qual é o nome do console mais vendido de todos os tempos?",
     respostas: [
-      "var colors = (1:'red', 2:'green', 3:'blue')",
-      "var colors = 'red', 'green', 'blue'",
-      "var colors = ['red', 'green', 'blue']",
+      "PlayStation 2",
+      "Nintendo Wii",
+      "Xbox 360",
+      "PlayStation 4"
     ],
-    correta: 2
+    correta: 0 // PlayStation 2
   },
   {
-    pergunta: "Como você arredonda o número 7.25 para o número inteiro mais próximo?",
+    pergunta: "Qual é o nome do primeiro jogo da série Final Fantasy?",
     respostas: [
-      "rnd(7.25)",
-      "Math.rnd(7.25)",
-      "Math.round(7.25)",
+      "Final Fantasy",
+      "Final Fantasy II",
+      "Final Fantasy III",
+      "Final Fantasy IV"
     ],
-    correta: 2
+    correta: 0 // Final Fantasy
   },
   {
-    pergunta: "Qual é a maneira correta de definir uma função em JavaScript?",
+    pergunta: "Qual é o nome do personagem que acompanha Lara Croft em Tomb Raider?",
     respostas: [
-      "function:myFunction()",
-      "function = myFunction()",
-      "function myFunction()",
+      "Winston",
+      "Sam",
+      "Jonah",
+      "Zip"
     ],
-    correta: 2
+    correta: 3 // Zip
   },
   {
-    pergunta: "Como você chama uma função chamada 'myFunction'?",
+    pergunta: "Qual é o nome do jogo que inspirou o filme Matrix?",
     respostas: [
-      "call function myFunction()",
-      "call myFunction()",
-      "myFunction()",
+      "Deus Ex",
+      "System Shock",
+      "Half-Life",
+      "Ghost in the Shell"
     ],
-    correta: 2
+    correta: 1 // System Shock
   },
   {
-    pergunta: "Como você escreve uma condição IF em JavaScript?",
+    pergunta: "Qual é o nome do jogo que foi lançado junto com o Nintendo 64?",
     respostas: [
-      "if i = 5 then",
-      "if i == 5 then",
-      "if (i == 5)",
+      "Super Mario 64",
+      "The Legend of Zelda: Ocarina of Time",
+      "GoldenEye 007",
+      "Mario Kart 64"
     ],
-    correta: 2
+    correta: 0 // Super Mario 64
   },
   {
-    pergunta: "Como você pode detectar o navegador do cliente?",
+    pergunta: "Qual é o nome do jogo que introduziu o modo cooperativo online em Halo?",
     respostas: [
-      "navigator.appName",
-      "browser.name",
-      "client.navName",
+      "Halo: Combat Evolved",
+      "Halo 2",
+      "Halo 3",
+      "Halo: Reach"
     ],
-    correta: 0
+    correta: 1 // Halo 2
   },
   {
-    pergunta: "Como você declara uma variável JavaScript de escopo de bloco?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a usar a tecnologia de captura de movimento?",
     respostas: [
-      "var myVariable;",
-      "let myVariable;",
-      "const myVariable;",
+      "Mortal Kombat",
+      "Prince of Persia",
+      "Street Fighter II",
+      "Donkey Kong Country"
     ],
-    correta: 1
+    correta: 0 // Mortal Kombat
   },
   {
-    pergunta: "Qual método você usaria para converter uma string em um número inteiro?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter uma trilha sonora original?",
     respostas: [
-      "Number.parseInt()",
-      "Number.parse()",
-      "Number.int()",
+      "Pong",
+      "Space Invaders",
+      "Pac-Man",
+      "Super Mario Bros."
     ],
-    correta: 0
+    correta: 3 // Super Mario Bros.
   },
   {
-    pergunta: "Qual objeto você usaria para trabalhar com datas?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um enredo e personagens?",
     respostas: [
-      "Date",
-      "Time",
-      "Calendar",
+      "Adventure",
+      "Zork",
+      "King's Quest",
+      "The Secret of Monkey Island"
     ],
-    correta: 0
+    correta: 0 // Adventure
   },
   {
-    pergunta: "Como você declara uma função anônima?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter gráficos 3D poligonais?",
     respostas: [
-      "function() {}",
-      "function = () {}",
-      "() => {}",
+      "Doom",
+      "Wolfenstein 3D",
+      "Star Fox",
+      "Alone in the Dark"
     ],
-    correta: 2
+    correta: 2 // Star Fox
   },
   {
-    pergunta: "Qual é a maneira correta de verificar se duas variáveis são iguais em valor e tipo?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo multiplayer online?",
     respostas: [
-      "x == y",
-      "x === y",
-      "x = y",
+      "Doom",
+      "Quake",
+      "Counter-Strike",
+      "Halo"
     ],
-    correta: 1
+    correta: 1 // Quake
   },
   {
-    pergunta: "Como você acessa o primeiro elemento de um array chamado 'myArray'?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um mundo aberto?",
     respostas: [
-      "myArray[0]",
-      "myArray[1]",
-      "myArray.first",
+      "Grand Theft Auto",
+      "The Elder Scrolls",
+      "The Legend of Zelda",
+      "Ultima"
     ],
-    correta: 0
+    correta: 3 // Ultima
   },
   {
-    pergunta: "Como você adiciona um elemento ao final de um array?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter uma inteligência artificial avançada?",
     respostas: [
-      "push()",
-      "pop()",
-      "add()",
+      "F.E.A.R.",
+      "Half-Life",
+      "Metal Gear Solid",
+      "SimCity"
     ],
-    correta: 0
+    correta: 0 // F.E.A.R.
   },
   {
-    pergunta: "Como você pode efetivamente interromper um loop?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter uma narrativa não-linear?",
     respostas: [
-      "break",
-      "stop",
-      "exit",
+      "Heavy Rain",
+      "Mass Effect",
+      "The Stanley Parable",
+      "The Witcher"
     ],
-    correta: 0
+    correta: 2 // The Stanley Parable
   },
   {
-    pergunta: "Qual é a maneira correta de criar um objeto em JavaScript?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter uma câmera em primeira pessoa?",
     respostas: [
-      "var obj = {}",
-      "var obj = Object()",
-      "Ambas as opções estão corretas",
+      "Wolfenstein 3D",
+      "Dungeon Master",
+      "Maze War",
+      "Battlezone"
     ],
-    correta: 2
+    correta: 2 // Maze War
   },
   {
-    pergunta: "Qual método você usaria para codificar uma URL em JavaScript?",
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter uma trilha sonora orquestrada?",
     respostas: [
-      "url.encode()",
-      "encodeURI()",
-      "encodeURIComponent()",
+      "Final Fantasy VI",
+      "The Legend of Zelda: Ocarina of Time",
+      "Dragon Quest VIII",
+      "Shadow of the Colossus"
     ],
-    correta: 1
+    correta: 3 // Shadow of the Colossus
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um sistema de moralidade?",
+    respostas: [
+      "Fable",
+      "Fallout",
+      "Knights of the Old Republic",
+      "Black & White"
+    ],
+    correta: 1 // Fallout
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo de criação de personagem?",
+    respostas: [
+      "The Sims",
+      "Ultima Online",
+      "Dungeons & Dragons",
+      "WWE SmackDown!"
+    ],
+    correta: 2 // Dungeons & Dragons
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo de realidade virtual?",
+    respostas: [
+      "Resident Evil 7",
+      "Half-Life: Alyx",
+      "Superhot VR",
+      "Dactyl Nightmare"
+    ],
+    correta: 3 // Dactyl Nightmare
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo de stealth?",
+    respostas: [
+      "Metal Gear Solid",
+      "Thief: The Dark Project",
+      "Splinter Cell",
+      "Castle Wolfenstein"
+    ],
+    correta: 3 // Castle Wolfenstein
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo de sandbox?",
+    respostas: [
+      "Minecraft",
+      "Garry's Mod",
+      "LittleBigPlanet",
+      "SimCity"
+    ],
+    correta: 3 // SimCity
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo de parkour?",
+    respostas: [
+      "Mirror's Edge",
+      "Assassin's Creed",
+      "Prince of Persia: The Sands of Time",
+      "Tomb Raider"
+    ],
+    correta: 2 // Prince of Persia: The Sands of Time
+  },
+  {
+    pergunta: "Qual é o nome do jogo que foi o primeiro a ter um modo de bullet time?",
+    respostas: [
+      "Max Payne",
+      "The Matrix: Path of Neo",
+      "Stranglehold",
+      "F.E.A.R."
+    ],
+    correta: 0 // Max Payne
   }
+
 ]
+
 
 
 // cria uma variavel de conteudo imutavel chamada template de conteudo <template> do HTML5

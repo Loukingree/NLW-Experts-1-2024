@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
 
 /* * representa todos */
 *, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   font-family: 'inter', san-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -11,19 +17,145 @@
 }
 
 body {
+  background-color:	#191622;
 }
 
 main {
   padding: 20px;
   max-width: 740px;
-  margin: 7 auto;
+  margin: 0 auto 64px;
   margin-bottom: 70px;
 }
 
+header {
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #334155;
+}
+
+header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 24px;
+  font-size: 30px;
+  color: #f1f5f9;
+}
+
+#quiz {
+  counter-reset: quiz-item;
+}
+
+.quiz-item {
+  margin-top: 24px;
+  border: 1px solid #475569;
+  border-radius: 7px;
+
+  /*para esconder os transbordamentos dos filhos */
+  overflow: hidden;
+}
+
+.quiz-item h3 {
+  padding: 16px 20px;
+  color: #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  background-color: #302b42;
+}
+
+.quiz-item h3:before {
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+
+  background-color: #475569;
+  width: 27px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 900;
+  border-radius: none;
+
+  display: flex;
+  /* eixo X */
+  justify-content: center;
+  /* eixo Y */
+  align-items: center;
+  flex-shrink: 0;
+
+}
+
+.quiz-item dl {
+  padding: 20px 24px;
+
+  display: grid;
+  gap: 7px;
+}
+
+.quiz-item dl dt {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #67E480;
+}
+
+input {
+  all: unset;
+  border: 1px solid #94a3b8;
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  display: flex;
+  /* alinha o conteudo no eixo X */
+  justify-content: center;
+  /* alinha o conteudo no eixo Y */
+  align-items: center;
+  flex-shrink: 0;
+}
+
+input:checked {
+  border: 2px solid #FF587C;
+}
+
+/* pseudo-selector ':' */
+input:checked:before { /* estrategia! */
+  content: "será?";
+  font-family: 'Protest Revolution', sans-serif;
+  color:aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #FF587C;
+  border-radius: 50%;
+}
+
+
 /* declaracao */
 #acertos {
+  font-family: 'Protest Guerrilla';
   text-align: center;
-  background-color: #35cbe6;
+  background-color: #00fff9;
   
   position: fixed;
   bottom: 0;
