@@ -152,7 +152,7 @@ input:checked:before { /* estrategia! */
 
 
 /* declaracao */
-#acertos {
+#acertos { /* nao consigo personalizar nada dessa div?! */
   font-family: 'Protest Guerrilla';
   text-align: center;
   background-color: #00fff9;
@@ -164,6 +164,6 @@ input:checked:before { /* estrategia! */
   width: 100%;
   /* preenchimento, padding */
   padding: 12px;
-  border: ;
+  border: 2px;
+  border-color: #FF587C;
   margin: ;
-}
