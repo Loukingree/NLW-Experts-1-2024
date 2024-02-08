@@ -6,3 +6,4 @@ Projeto Quiz feito no Evento NLW (primeiro de 2024) em 3 dias, com Prof Mayk Bri
 - CSS
 - JavaScript
 - GitHub
+- Front-End Editor (by mayk Brito, Diogo Fernandes e Joseph Oliveira)
